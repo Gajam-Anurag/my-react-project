@@ -1,20 +1,24 @@
+import {useState} from 'react'
+
+
 const Home = () => {
 
-    const Home = (e) => {
-        console.log("Hello",e);
+    const [blogs, setBlogs] = useState([
+        {title: 'My new Website', body: 'abcdefghij', author : 'Anurag', id:1},
+        {title: "Welcome party", body: "abcdefghij", author : "Gajam", id:2},
+        {title: "Another website", body: "abcdefghij", author : "Anurag Gajam", id:3}
+    ]);
 
-    }
-    const Home2 = (name,e) => {
-
-        console.log("Hello " + name, e.target);
-
-    }
     return ( 
    
         <div className="home">
-            <h2>My Home blog</h2>
-            <button onClick = {Home} > Click Me</button>
-            <button onClick = { (e) => Home2('Anurag Gajam',e) }>Click for Name</button>
+            <h2>My Home blog</h2><br/>
+            {blogs.map((blog) => (
+                <div className="blog-pre" key={blog.id}>
+                    <h2>{blog.title}</h2>
+                    <p>written by {blog.author}</p>
+                </div>
+            ))}
         </div>
      );
 }
