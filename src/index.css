@@ -44,6 +44,17 @@ border-bottom: 1px solid #c1cd1b;
 }
 .blog-pre h2{
 font-size: 30px;
-color:rgb(221, 100, 31);
+color:rgb(124, 104, 93);
 margin-bottom: 8px;
+}
+.blog-pre h3{
+  font-size: 25px;
+  color: #c67474;
+  margin-top: 2%;
+}
+.blog-pre p{
+  margin-top: 2%;
+}
+.blog-pre button{
+  margin-top: 3%;
 }
