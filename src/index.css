@@ -58,3 +58,6 @@ margin-bottom: 8px;
 .blog-pre button{
   margin-top: 3%;
 }
+.blog-pre a {
+  text-decoration: none;
+}
