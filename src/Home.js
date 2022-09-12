@@ -2,7 +2,7 @@ import BlogList from './BlogList';
 import useFetch from './useFetch';
 
 const Home = () => {
-    const {data: blogs, isPending, isError} = useFetch('http://localhost:8000/blogs')
+    const {data: blogs, isPending, isError} = useFetch('https://18.144.101.90:3000//blogs')
     
     return ( 
    
